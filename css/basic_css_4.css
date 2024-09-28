@@ -1,0 +1,12 @@
+.even {
+    background-color: crimson;
+    color: gold;
+    font-weight: bold;
+}
+body {
+    background-color: black;
+    color: white;
+}
+.emphasis {
+    font-size: 30px;
+}

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <p><a href="./index.html">Back To Index</a></p>
+        <h2>Form</h2>
+        <form action="table.html" method="post">
+            <div>
+                <div><label for="name">Name</label></div>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <div><label for="email">Email</label></div>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <div><label for="password">Password</label></div>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <div><label for="bio"></label>About You</div>
+                <textarea name="boi" id="bio" cols="25" rows="5"></textarea>
+            </div>
+            <div>
+                <div>Residence Type</div>
+                <input type="radio" name="home_type" id="house" value="house">
+                <label for="house">House</label>
+
+                <input type="radio" name="home_type" id="apartment" value="apartment">
+                <label for="apartment">Apartment</label>
+                
+                <input type="radio" name="home_type" id="farm" value="farm">
+                <label for="farm">Farm</label>
+                
+                <input type="radio" name="home_type" id="site" value="site">
+                <label for="site">Site</label>
+            </div>
+            <div>
+                <select name="plan" id="plan" required>
+                    <option value="">Select a Plan</option>
+                    <option value="free">Free Plan</option>
+                    <option value="silver">Silver Plan - R$ 59,00</option>
+                    <option value="gold">Gold Plan - R$ 89,00</option>
+                </select>
+            </div>
+            <div>
+                <div>Your Interests</div>
+                <input type="checkbox" name="technology" id="technology">
+                <label for="technology">Technology</label>
+
+                <input type="checkbox" name="sport" id="sport">
+                <label for="sport">Sport</label>
+
+                <input type="checkbox" name="movie" id="movie">
+                <label for="movie">Movie</label>
+
+                <input type="checkbox" name="music" id="music">
+                <label for="music">Music</label>
+            </div>
+            <div>
+                <br>
+                <button>Save</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </body>
+</html>
