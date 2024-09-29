@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Selectors #3</title>
+        <style>
+            body {
+                background-color: black;
+                color: whitesmoke;
+            }
+            div ~ p {
+                background-color: blueviolet;
+            }  
+            span + p {
+                background-color: chocolate;
+            }
+            .child-example > p {
+                background-color: crimson;
+            }
+            #descendant-example p{
+                background-color: fuchsia;
+            } 
+        </style>
+    </head>
+    <body>
+        <div><a href="./index.html">Back To Index</a></div>
+        <h2>Adjacent Sibiling Selector</h2>
+
+        <div>
+            <span>Before</span>
+            <p>Paragraph #01</p>
+            <p>Paragraph #02</p>
+        </div>
+        
+
+        <h2>General Sibiling Selector</h2>
+        <div>
+            <div>Before</div>
+            <p>Paragraph #01</p>
+            <p>Paragraph #02</p>
+        </div>
+
+        <h2>Child Selector</h2>
+        <div class="child-example">
+            <div>Before</div>
+            <p>Paragraph #01</p>
+            <div><p>Paragraph #02</p></div>
+        </div>
+
+        <h2>Descendant Selector</h2>
+        <div id="descendant-example">
+            <div>Before</div>
+            <p>Paragraph #01</p>
+            <div><p>Paragraph #02</p></div>
+        </div>
+        
+    </body>
+</html>
